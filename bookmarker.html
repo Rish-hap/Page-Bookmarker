@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <script src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+
+    <title>site bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bookmark.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+
+    <!-- Custom styles for this template -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onload ='fetchBookmark()' >
+
+    <div class="container">
+      <div class="header clearfix">
+      
+        <h3 class="text-muted"></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2 class='head text-center'>Bookmark your favourite site</h2>
+       <form id='myForm'>
+        <div class='form-group'>
+          <label class='text-center'>Webite name</label>
+          <input type="text" class='form-control' id='siteName' placeholder="WebSite Name">
+        </div>
+         <div class='form-group'>
+          <label lass='text-center'>Website url</label>
+          <input type="text" class='form-control' id='siteUrl' placeholder="WebSite url">
+        </div>
+        <button type='submit' class='btn btn-primary' target ="blank">Submit</button>
+       </form>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12 text-center">
+         <div id='bookmarksResults'>
+           
+         </div>
+        </div>
+      </div>
+     <footer class="footer text-center">
+        <p>© 2018 rishav upadhayay Inc.</p>
+      </footer>
+
+      
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+ 
+    <script type="text/javascript" src='bookMarker.js'></script>
+  </body>
+</html>
